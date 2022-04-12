@@ -1,0 +1,15 @@
+.title {
+    display:flex;
+    justify-content: center;
+    background-color: rgb(4, 4, 156);
+    color:white;
+}
+
+.side {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 240px;
+    height: 400px;
+    align-content: space-between;
+}

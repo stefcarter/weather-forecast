@@ -8,11 +8,11 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appi
 .then(response => response.json())
 .then(data => {
   for(i = 0; i<6; i++){
-      document.getElementById("day" + (i+1) +"Min").innerHTML = "Tempurature: " + Number(data.list[i].main.temp_min).toFixed(1)+ "°";
+      document.getElementById("day" + (i+1) +"Temp").innerHTML = "Tempurature: " + Number(data.list[i].main.temp_min).toFixed(1)+ "°";
   }
 
   for(i = 0; i<6; i++){
-      document.getElementById("day" + (i+1) +"Max").innerHTML = "Wind: " + Number(data.list[i].wind.speed).toFixed(2) + "MPH";
+      document.getElementById("wind" + (i+1) +"Max").innerHTML = "Wind: " + Number(data.list[i].wind.speed).toFixed(2) + "MPH";
   }
 
   for(i = 0; i<6; i++){
@@ -27,7 +27,6 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appi
   console.log(data)
 })
 
-.catch(err => alert("Something Went Wrong: Try Checking Your Internet Coneciton"))
 }
 
 function DefaultScreen(){

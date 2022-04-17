@@ -11,10 +11,14 @@
     font-weight:bold;
 }
 
+#cityInput {
+    width: 150px;
+    position:relative;
+}
 
 #iconsContainer{
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -64,4 +68,10 @@
 
 center {
     height: 275px;
+}
+
+h1 {
+    text-align:center;
+    background-color: rgb(4, 4, 175);
+    color:white;
 }
